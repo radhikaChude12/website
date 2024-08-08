@@ -52,4 +52,4 @@ jobs:
 
       - name: Run Docker Container
         run: |
-          docker run -d -p 8080:8080 --restart unless-stopped --name springboot-example-container nandkumarmohite/attendace-service-app:latest
+          docker run -d -p 8080:8080 --restart unless-stopped --name springboot-example-container radhikaschude/website:latest
