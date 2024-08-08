@@ -26,7 +26,7 @@ jobs:
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
 
       - name: Build docker image
-        run: docker build -t website/attendace-service-app .
+        run: docker build -t radhikaschude/website .
 
       - name: Publish image to docker hub
         run: docker push radhikaschude/website:latest
